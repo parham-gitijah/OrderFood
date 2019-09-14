@@ -9,12 +9,14 @@
     <div class="form-group">
         <div class="form-group">
             <div class="input-group">
-                <input type="search" class="form-control" value="" />
-                <span class="input-group-btn">
-                    <button type="button" class="btn btn-default">
-                        <span class="glyphicon glyphicon-heart-empty"></span>
-                    </button>
-                </span>
+                <form>
+                    <input type="search" class="form-control" asp-for="search_name" />
+                    <span class="input-group-btn">
+                        <button name="search_btn" type="button" class="w3-button w3-circle">
+                            <span class="fa fa-search"></span>
+                        </button>
+                    </span>
+                </form>
             </div>
         </div>
 

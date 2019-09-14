@@ -1,0 +1,21 @@
+﻿@page
+@model OrderFood.Pages.Restaurants.DetailModelModel
+@{
+    ViewData["Title"] = "DetailModel";
+}
+
+<h1>DetailModel</h1>
+
+<div class="form-group">
+    id: @Model.Restaurant.Id
+</div>
+<div class="form-group">
+    location: @Model.Restaurant.Location
+</div>
+<div class="form-group">
+    type: @Model.Restaurant.Cuisine
+</div>
+<a class="form-group w3-btn w3-white w3-border w3-border-black w3-round-xlarge"  asp-page="./List" >
+    Get All restaurants!
+ </a>
+

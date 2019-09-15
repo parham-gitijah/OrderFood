@@ -9,14 +9,14 @@
     <div class="form-group">
         <div class="form-group">
             <div class="input-group">
-                <form>
+               
                     <input type="search" class="form-control" asp-for="search_name" />
                     <span class="input-group-btn">
                         <button name="search_btn" type="button" class="w3-button w3-circle">
                             <span class="fa fa-search"></span>
                         </button>
                     </span>
-                </form>
+           
             </div>
         </div>
 
@@ -30,6 +30,8 @@
         <td>@r.Name</td>
         <td>@r.Location</td>
         <td>@r.Cuisine</td>
+
+        <td><a asp-page="./DetailModel" asp-route-RestaurantId="@r.Id" ><i class="fa fa-bars" style="color:black"></i></a></td>
     </tr>
     }
 </table>

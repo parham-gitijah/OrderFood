@@ -11,9 +11,10 @@ namespace OrderFood.Pages.Restaurants
     public class DetailModelModel : PageModel
     {
         public Restaurant Restaurant { get; set; }
-        public void OnGet()
+        public void OnGet(int RestaurantId)
         {
             Restaurant = new Restaurant();
+            Restaurant.Id = RestaurantId;
         }
     }
 }

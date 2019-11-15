@@ -13,9 +13,16 @@ namespace OrderFood.Data
         IEnumerable<Restaurant> GetRestaurantsByName(string s);
 
 
+<<<<<<< HEAD
+        
+
+sassdasdadas
+
+=======
 
 
         asdasd
+>>>>>>> master
 
     }
     public class InMemoryRestaurantData : IRestaurantData

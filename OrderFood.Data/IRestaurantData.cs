@@ -9,6 +9,7 @@ namespace OrderFood.Data
 {
     public interface IRestaurantData
     {
+
         IEnumerable<Restaurant> GetRestaurantsByName(string s);
 
 

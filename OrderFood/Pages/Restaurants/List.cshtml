@@ -31,7 +31,8 @@
         <td>@r.Location</td>
         <td>@r.Cuisine</td>
 
-        <td><a asp-page="./DetailModel" asp-route-RestaurantId="@r.Id" ><i class="fa fa-bars" style="color:black"></i></a></td>
+        <td><a asp-page="./DetailModel" asp-route-RestaurantId="@r.Id" asp-route-RestaurantLoc="@r.Location" asp-route-RestaurantName="@r.Name"><i class="fa fa-bars" style="color:black"></i></a></td>
+        <td><a asp-page="./Edit" asp-route-RestaurantId="@r.Id" asp-route-RestaurantLoc="@r.Location" asp-route-RestaurantName="@r.Name"><i class="fa fa-search" style="color:black"></i></a></td>
     </tr>
     }
 </table>

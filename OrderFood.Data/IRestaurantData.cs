@@ -10,8 +10,7 @@ namespace OrderFood.Data
     public interface IRestaurantData
     {
         IEnumerable<Restaurant> GetRestaurantsByName(string s);
-
-
+        
     }
     public class InMemoryRestaurantData : IRestaurantData
     {
@@ -35,12 +34,23 @@ namespace OrderFood.Data
         }
 
 
+        //
+
 
         public IEnumerable<Restaurant> GetRestaurantsByName(string name=null)
         {
             return  from r in restaurants where(string.IsNullOrEmpty(name) || r.Name.StartsWith(name, StringComparison.InvariantCultureIgnoreCase) || r.Name.Equals(""))
                    orderby r.Name
                    select r;
+
+        }
+        public IEnumerable<Restaurant> GetRestaurantById(int id)
+        {
+            return from r in restaurants
+                   where (r.Id==id)
+                   orderby r.Id
+                   select r;
+            
 
         }
     } }

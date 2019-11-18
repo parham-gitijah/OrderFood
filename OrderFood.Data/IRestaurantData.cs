@@ -9,8 +9,23 @@ namespace OrderFood.Data
 {
     public interface IRestaurantData
     {
+
         IEnumerable<Restaurant> GetRestaurantsByName(string s);
+<<<<<<< HEAD
         
+=======
+
+
+        
+
+<<<<<<< HEAD
+sassdasdadasadsdasdasassdasd
+=======
+sassdasdadas
+>>>>>>> parent of 1c9c0e2... Merge branch 'master' into Test1
+
+
+>>>>>>> b2ce6602d06bec88d54c5be0b9c5ef3107a76077
     }
     public class InMemoryRestaurantData : IRestaurantData
     {

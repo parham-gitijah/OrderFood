@@ -15,7 +15,11 @@ namespace OrderFood.Data
 
         
 
+<<<<<<< HEAD
 sassdasdadasadsdasdas
+=======
+sassdasdadas
+>>>>>>> parent of 1c9c0e2... Merge branch 'master' into Test1
 
 
     }
